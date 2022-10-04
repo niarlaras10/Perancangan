@@ -1,0 +1,28 @@
+if (MotorMode == 0) { // initial mode
+ 
+    digitalWrite(1, LOW); // Motor in initial state = off
+   
+    
+   
+  }
+
+  if (MotorMode == 1) { // Motor in the forward direction
+    digitalWrite(2, HIGH);  // turn direction relay on for forward direction
+    digitalWrite(1, HIGH);  // turn motor voltage on
+
+  
+  }
+
+  if (MotorMode == 2) { // Motor stops
+    digitalWrite(1, LOW);  //turn motor voltage off
+   
+    
+   
+  }
+  if (MotorMode == 3)  { // Motor goes in the reverse direction
+    digitalWrite(2, LOW); //turn direction relay off for reverse direction
+    digitalWrite(1, HIGH); // turn motor voltage on
+
+   
+  }    
+}
